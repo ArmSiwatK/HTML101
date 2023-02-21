@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Reservation Form</title>
+</head>
+<body>
+    <h1>Travel Reservation Form</h1>
+    <h2>* denotes mandatory</h2>
+    <form>
+        <section>
+            <label for="fullName">Full Name*:</label>
+            <br>
+            <input type="text" name="fullName" id="fullName" placeholder="First Name + Last Name">
+        </section>
+        <br>
+        <section>
+            <label for="emailAddress">Email Address*:</label>
+            <br>
+            <input type="text" name="emailAddress" id="emailAddress" placeholder="Your Email Address">
+        </section>
+        <br>
+        <section>
+            <label for="tourPackage">Select Tour Package*:</label>
+            <br>
+            <select name="tourPackage" id="tourPackage">
+                <option value="paris">Paris, France</option>
+                <option value="tokyo">Tokyo, Japan</option>
+                <option value="newyork">New York City, USA</option>
+                <option value="barcelona">Barcelona, Spain</option>
+                <option value="sydney">Sydney, Australia</option>
+            </select>
+        </section>
+        <br>
+        <section>
+            <label for="arrivalDate">Date of Arrival*:</label>
+            <br>
+            <input type="date" name="arrivalDate" id="arrivalDate">
+        </section>
+        <br>
+        <section>
+            <label for="numberPersons">Number of Travelers*:</label>
+            <br>
+            <input type="text" name="numberPersons" id="numberPersons" placeholder="How many?">
+        </section>
+        <br>
+        <section>
+            <span>What amenities do you need?</span><br>
+            <input type="checkbox" name="amenities" id="boarding" value="boarding">
+            <label for="boarding">Boarding</label>
+            <br>
+            <input type="checkbox" name="amenities" id="meal" value="meal">
+            <label for="meal">Meals</label>
+            <br>
+            <input type="checkbox" name="amenities" id="sightseeing" value="sightseeing">
+            <label for="sightseeing">Sightseeing</label>
+        </section>
+        <br>
+        <section>
+            <label for="discountCode">Discount Coupon Code:</label>
+            <br>
+            <input type="text" name="discountCode" id="discountCode" placeholder="Type your code here.">
+        </section>
+        <br>
+        <section>
+            <span>Terms and Conditions*</span><br>
+            <input type="radio" name="terms" id="termsAgree" value="termsAgree">
+            <label for="termsAgree">I agree.</label>
+            <input type="radio" name="terms" id="termsDisagree" value="termsDisagree">
+            <label for="termsDisagree">I disagree.</label>
+        </section>
+        <br>
+        <section>
+            <input type="submit" value="Complete Reservation">
+        </section>
+    </form>
+</body>
+</html>
